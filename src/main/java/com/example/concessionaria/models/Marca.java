@@ -8,7 +8,6 @@ import java.util.Set;
 
 @Entity
 @Data
-@Accessors(fluent = true)
 public class Marca {
     public Marca() {
 

@@ -1,5 +1,6 @@
 package com.example.concessionaria.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -9,7 +10,6 @@ import java.util.Date;
 
 @Data
 @Entity
-@Accessors(fluent = true)
 public class Auto {
     public Auto() {
 
@@ -27,5 +27,6 @@ public class Auto {
     private double chilometraggio;
     private String tipoCarburante;
     @Temporal(TemporalType.DATE)
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private Date immatricolazione;
 }

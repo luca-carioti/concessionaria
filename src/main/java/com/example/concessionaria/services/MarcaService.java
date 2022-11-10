@@ -29,7 +29,7 @@ public class MarcaService {
         }
         return new ArrayList<>();
     }
-    public void update(Marca marca){marcaRepository.update(marca.nazionalita(),marca.nome(),marca.numeroModelli(),marca.id());}
+    public void update(Marca marca){marcaRepository.update(marca.getNazionalita(),marca.getNome(),marca.getNumeroModelli(),marca.getId());}
     public Marca add(Marca marca){
         return marcaRepository.save(marca);
     }

@@ -31,6 +31,6 @@ public class AutoService {
         }
         return new ArrayList<>();
     }
-    public void update(Auto auto){autoRepository.update(auto.chilometraggio(),auto.cilindrata(),auto.colore(),
-            auto.modello(),auto.targa(),auto.tipoCarburante(),auto.id());}
+    public void update(Auto auto){autoRepository.update(auto.getChilometraggio(),auto.getCilindrata(),auto.getColore(),
+            auto.getModello(),auto.getTarga(),auto.getTipoCarburante(),auto.getId());}
 }
